@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <style>
+      .text-base {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 800;
+        fill: #c9d1d9;
+      }
+      
+      .peak-text {
+        animation: colorCycle 4s ease-in-out infinite alternate;
+      }
+      
+      .floating-group {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      @keyframes colorCycle {
+        0% { fill: #ff7b72; filter: drop-shadow(0 0 8px rgba(255,123,114,0.6)); }
+        50% { fill: #d2a8ff; filter: drop-shadow(0 0 8px rgba(210,168,255,0.6)); }
+        100% { fill: #79c0ff; filter: drop-shadow(0 0 8px rgba(121,192,255,0.6)); }
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+      }
+    </style>
+  </defs>
+
+  <!-- GitHub Dark Mode Background -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="15" />
+
+  <!-- Animated Twinkling Background Stars -->
+  <g fill="#8b949e">
+    <circle cx="120" cy="40" r="3">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="150" r="4">
+      <animate attributeName="opacity" values="0.1;0.9;0.1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;140;150" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="50" r="2.5">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80" cy="160" r="3.5">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="160;155;160" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="30" r="2">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Floating Main Text -->
+  <g class="floating-group" text-anchor="middle" dominant-baseline="middle">
+    <text x="400" y="105" class="text-base">
+      Goodybabaz is <tspan class="peak-text">peak</tspan>
+    </text>
+  </g>
+</svg>
