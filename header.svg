@@ -29,10 +29,8 @@
     </style>
   </defs>
 
-  <!-- GitHub Dark Mode Background -->
   <rect width="100%" height="100%" fill="#0d1117" rx="15" />
 
-  <!-- Animated Twinkling Background Stars -->
   <g fill="#8b949e">
     <circle cx="120" cy="40" r="3">
       <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" />
@@ -53,7 +51,6 @@
     </circle>
   </g>
 
-  <!-- Floating Main Text -->
   <g class="floating-group" text-anchor="middle" dominant-baseline="middle">
     <text x="400" y="105" class="text-base">
       Goodybabaz is <tspan class="peak-text">peak</tspan>
